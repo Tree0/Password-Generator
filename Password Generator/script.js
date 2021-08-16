@@ -12,7 +12,7 @@ function passwordGenerator() {
   let num = document.querySelector('#num').checked;
   let special = document.querySelector('#special').checked;
 
-  if(upperCase <= 0){
+  if(upperCase + lowerCase + num + special  <= 0){
     window.alert("Please tick at least one checkbox");
     return;
   }
