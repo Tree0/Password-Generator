@@ -1,0 +1,39 @@
+Bootstrap Phase-1
+1.Create a container.
+2.Input box to show the generated password
+2.Label and inputbox for password length.
+3.Label for (UPPERCASE) and checkbox.
+
+-------Javascript (logic) phase1 upperCase letter--------
+
+1. Input password length from user.
+
+
+2.if length !='' AND Checkbox  checked;
+    Generate random uppercase letter.
+    else
+    Generate a alertbox(Please enter the length and tick atleast one checkBox).
+
+3. Display the Generated password in the inputBox.
+
+
+-----Bootstrap Phase-2------
+
+1.Create a new row.
+2.And 2 columns one for the label and another for the checkbox.
+
+-------Javascript (logic) phase-2 LowerCase letter------
+
+1. Run a loop till the password length.
+2. check if lowerCase is checked or not.
+3. if checked than generate the lowerCase letter till password length.
+
+-----Bootstrap Phase-3------
+
+Repeat the phase-2 steps.
+
+---------Javascript (logic) phase-3 for numbers-------
+
+1. Created a random function to generate random number in a range (min, max).
+2.Random function will generate number and select the random letter from the checked categories.
+3. If number is checked than include numbers in the password and concatenate the string.
