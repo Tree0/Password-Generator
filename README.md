@@ -7,7 +7,7 @@ I buid this project for Generating random password. Where user can customize the
 
 ## Demo
 
-Insert gif or link to demo
+<img src="./passGenerator.gif" alt="My Project GIF" width="500" height="600">
 
 
   
