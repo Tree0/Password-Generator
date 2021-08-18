@@ -21,8 +21,8 @@ function passwordGenerator() {
     return;
   }
 
-  if(passLength<=0 || passLengthValue === ''){
-    window.alert("Please Enter a Natural Number(Above 1)");
+  if(passLength<=0 || passLength>30 || passLengthValue === ''){
+    window.alert("Please Enter a Natural Number(in the range of 1 to 30)");
     return;
   }
 
