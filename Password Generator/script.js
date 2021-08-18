@@ -4,16 +4,25 @@ function randomNumberGenerator(min, max) {
 }
 
 
+document.querySelector('#generate').addEventListener('click', passwordGenerator);
+
 function passwordGenerator() {
-  let password ="";
-  let passLength = Number(document.querySelector('#passLength').value);
+  var password ="";
+  let passLengthValue = document.querySelector('#passLength').value
+  let passLength = Number(passLengthValue);
   let upperCase = document.querySelector('#upperCase').checked;
   let lowerCase = document.querySelector('#lowerCase').checked;
   let num = document.querySelector('#num').checked;
   let special = document.querySelector('#special').checked;
+  console.log(passLengthValue);
 
-  if(upperCase + lowerCase + num + special  <= 0){
+  if(upperCase + lowerCase + num + special <= 0){
     window.alert("Please tick at least one checkbox");
+    return;
+  }
+
+  if(passLength<=0 || passLengthValue === ''){
+    window.alert("Please Enter a Natural Number(Above 1)");
     return;
   }
 
@@ -49,5 +58,10 @@ function passwordGenerator() {
 
 }
 
+function passwordCopy() {
+  let copyText = document.querySelector("#passGenerated");
+  copyText.select();
+  document.execCommand('copy');
+}
 
-    document.querySelector('#generate').addEventListener('click', passwordGenerator);
+document.querySelector('.copy').addEventListener('click',passwordCopy);
