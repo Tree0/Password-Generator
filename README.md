@@ -1,7 +1,7 @@
 
 # Random Password Generator
 
-I buid this project for Generating random password. Where user can customize the password characters and length of the password. While building this project I learned about String.fromCharCode() method in JavaScript that can be used to convert a number to its associated ASCII Value. I also learned How to use Math.random() method to generate random values in a certain range.
+I build this project for Generating random password. Where user can customize the password characters and length of the password. While building this project I learned about String.fromCharCode() method in JavaScript that can be used to convert a number to its associated ASCII Value. I also learned How to use Math.random() method to generate random values in a certain range.
 
 
 
